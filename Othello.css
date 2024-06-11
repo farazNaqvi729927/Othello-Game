@@ -1,0 +1,28 @@
+body{
+    background-color: darkslategrey;
+    color: white;
+}
+
+
+.a {
+    margin-top: 200px;
+    width: 282px;
+    margin-left: 540px;
+}
+
+
+.b {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    color: white;
+}
+
+
+button {
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: green;
+    color: white;
+}
