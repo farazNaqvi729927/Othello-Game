@@ -616,6 +616,7 @@ const Board = (r, c) => {
             countB = 2;
             countW = 2;
             symbol = true;
+            alert('Wrong Move! Game will be restarted!')
 
         }
 
