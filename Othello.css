@@ -1,4 +1,4 @@
-body{
+body {
     background-color: darkslategrey;
     color: white;
 }
@@ -25,4 +25,203 @@ button {
     font-weight: bold;
     background-color: green;
     color: white;
+}
+
+
+
+
+.head {
+    margin-left: 580px;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+
+
+    .head {
+        margin-left: 35%;
+    }
+
+
+    #turn {
+        margin-Left: 31%;
+        position: absolute;
+        top: 27%;
+    }
+
+
+    .a {
+        margin-top: 25%;
+        width: 282px;
+        margin-left: 29%;
+    }
+
+
+    #b {
+        margin-Left: -42.5%;
+
+    }
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+@media (min-width:1024px) {
+
+
+    .head {
+        margin-left: 40%;
+    }
+
+
+
+    #b {
+        margin-Left: -18.5%;
+
+    }
+
+
+
+
+    #turn {
+        margin-Left: 36.5%;
+        position: absolute;
+        top: 27%;
+    }
+
+
+
+    .a {
+        margin-top: 18%;
+        width: 282px;
+        margin-left: 36%;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+@media (min-width:1440px) {
+
+
+    .head {
+        margin-left: 40%;
+        font-size: 50px;
+    }
+
+
+
+    #b {
+        margin-Left: -1%;
+        font-size: 23px;
+
+    }
+
+
+
+
+    #turn {
+        margin-Left: 37.5%;
+        position: absolute;
+        top: 27%;
+        font-size: 23px;
+    }
+
+
+
+    .a {
+        margin-top: 18%;
+        width: 282px;
+        margin-left: 38.2%;
+    }
+
+
+
+
+    button {
+        width: 45px;
+        height: 45px;
+        font-size: 28px;
+        font-weight: bold;
+        background-color: green;
+        color: white;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width:1920px) {
+
+
+    .head {
+        margin-left: 41%;
+        font-size: 60px;
+    }
+
+
+
+    #b {
+        margin-Left: 9%;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+
+
+
+    #turn {
+        margin-Left: 38.5%;
+        position: absolute;
+        top: 27%;
+        font-size: 28px;
+    }
+
+
+
+    .a {
+        margin-top: 18%;
+        width: 282px;
+        margin-left: 39.2%;
+    }
+
+
+
+
+    
+    button {
+        width: 55px;
+        height: 55px;
+        font-size: 28px;
+        font-weight: bold;
+        background-color: green;
+        color: white;
+    }
+
+
 }
