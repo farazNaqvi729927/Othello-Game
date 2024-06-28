@@ -640,19 +640,15 @@ const Board = (r, c) => {
         if (allCellsFilled) {// this will run when the board is filled completely
             if (countB > countW) {
                 Display1.innerHTML = `
-                    <h2 id="turn1" style="margin-left: 570px; position: absolute; top: 80px; color: black;">Black Discs Number:
+                    <h2 id="turn1" style="margin-left: 570px; position: absolute; top: 80px; color: black;">Black Discs :
                         ${countB}
                     </h2>
-            
-                    <h2 id="turn2" style="margin-left: 570px; position: absolute; top: 120px;">White Discs Number:
+                    <h2 id="turn2" style="margin-left: 570px; position: absolute; top: 120px;">White Discs :
                         ${countW}
-                    </h2>
+                    </h2>`;
 
+                alert('The Winner is Black Colour!');
 
-                    <h2 id="turn1" style="margin-left: 580px; position: absolute; top: 200px; color: black; text-shadow: 
-                    -1px -1px 0 #fff, 1px -1px 0 #fff, 
-                    -1px 1px 0 #fff, 
-                     1px 1px 0 #fff;">Winner: Black Colour</h2>`
 
                 Display.innerHTML = '';
 
@@ -660,97 +656,34 @@ const Board = (r, c) => {
 
             else if (countW > countB) {
                 Display1.innerHTML = `
-                    <h2 id="turn1" style="margin-left: 570px; position: absolute; top: 80px; color: black;">Black Discs Number:
-                        ${countB}
-                    </h2>
-    
-                    <h2 id="turn2" style="margin-left: 570px; position: absolute; top: 120px;">White Discs Number:
-                        ${countW}
-                    </h2>
+                <h2 id="turn1" style="margin-left: 570px; position: absolute; top: 80px; color: black;">Black Discs :
+                    ${countB}
+                </h2>
+                
+                <h2 id="turn2" style="margin-left: 570px; position: absolute; top: 120px;">White Discs :
+                    ${countW}
+                </h2>`;
 
-                    <h1 id="turn1" style="margin-left: 580px; position: absolute; top: 200px; color: white;text-shadow: 
-                    -1px -1px 0 #000,  
-                     1px -1px 0 #000, 
-                    -1px 1px 0 #000, 
-                     1px 1px 0 #000;">Winner:
-                        White Colour
-                    </h1>`;
+                alert('The Winner is White Colour!');
+
                 Display.innerHTML = '';
             }
 
 
             Display1.innerHTML = `
-                    <h2 id="turn1" style="margin-left: 620px; position: absolute; top: 1150px; color: yellow; text-shadow: 
-                        -1px -1px 0 #000,  
-                         1px -1px 0 #000, 
-                        -1px 1px 0 #000, 
-                         1px 1px 0 #000;">
-                        It's a tie!
+                    <h2 id="turn1" style="margin-left: 570px; position: absolute; top: 80px; color: black;">Black Discs :
+                        ${countB}
+                    </h2>
+
+                    <h2 id="turn2" style="margin-left: 570px; position: absolute; top: 120px;">White Discs :
+                        ${countW}
                     </h2>`;
+
+            alert('Its a Tie!');
+
             Display.innerHTML = '';
 
         }
-
-
-
-        // if (!allCellsFilled && !anyFlippingHappened) {
-        //     gameBoard[r][c] = null;
-
-        //     if (countB > countW) {
-        //         Display1.innerHTML = `
-
-        //             <h2 id="turn1" style="margin-left: 570px; position: absolute; top: 80px; color: black;">Black Discs Number:
-        //                 ${countB}
-        //             </h2>
-
-        //             <h2 id="turn2" style="margin-left: 570px; position: absolute; top: 120px;">White Discs Number:
-        //                 ${countW}
-        //             </h2>
-
-        //             <h2 id="turn1" style="margin-left: 580px; position: absolute; top: 200px; color: black; text-shadow: 
-        //             -1px -1px 0 #fff, 1px -1px 0 #fff, 
-        //             -1px 1px 0 #fff, 
-        //              1px 1px 0 #fff;">Winner: Black Colour</h2>`
-
-        //         Display.innerHTML = '';
-        //     }
-
-        //     else if (countW > countB) {
-        //         Display1.innerHTML = `
-
-        //             <h2 id="turn1" style="margin-left: 570px; position: absolute; top: 80px; color: black;">Black Discs Number:
-        //                 ${countB}
-        //             </h2>
-
-        //             <h2 id="turn2" style="margin-left: 570px; position: absolute; top: 120px;">White Discs Number:
-        //                 ${countW}
-        //             </h2>
-
-
-        //             <h2 id="turn1" style="margin-left: 580px; position: absolute; top: 200px; color: white;text-shadow: 
-        //             -1px -1px 0 #000,  
-        //              1px -1px 0 #000, 
-        //             -1px 1px 0 #000, 
-        //              1px 1px 0 #000;">Winner:
-        //                 White Colour
-        //             </h2>`;
-        //         Display.innerHTML = '';
-        //     }
-
-        //     else {
-        //         Display1.innerHTML = `
-        //             <h1 id="turn1" style="margin-left: 620px; position: absolute; top: 80px; color: yellow; text-shadow: 
-        //                 -1px -1px 0 #000,  
-        //                  1px -1px 0 #000, 
-        //                 -1px 1px 0 #000, 
-        //                  1px 1px 0 #000;">
-        //                 It's a tie!
-        //             </h1>`;
-
-        //         Display.innerHTML = '';
-        //     }
-
-        // }
 
 
 
@@ -771,5 +704,8 @@ const Board = (r, c) => {
 
     isBoardFull();
 }
+
+
+
 
 
