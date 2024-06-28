@@ -616,6 +616,7 @@ const Board = (r, c) => {
             countB = 2;
             countW = 2;
             symbol = true;
+
         }
 
     }
@@ -670,18 +671,23 @@ const Board = (r, c) => {
             }
 
 
-            Display1.innerHTML = `
-                    <h2 id="turn1" style="margin-left: 570px; position: absolute; top: 80px; color: black;">Black Discs :
-                        ${countB}
-                    </h2>
+            else if (countB === countW) {
 
-                    <h2 id="turn2" style="margin-left: 570px; position: absolute; top: 120px;">White Discs :
-                        ${countW}
-                    </h2>`;
+                Display1.innerHTML = `
+                <h2 id="turn1" style="margin-left: 570px; position: absolute; top: 80px; color: black;">Black Discs :
+                    ${countB}
+                </h2>
 
-            alert('Its a Tie!');
+                <h2 id="turn2" style="margin-left: 570px; position: absolute; top: 120px;">White Discs :
+                    ${countW}
+                </h2>`;
 
-            Display.innerHTML = '';
+                alert('Its a Tie!');
+
+                Display.innerHTML = '';
+            }
+
+
 
         }
 
@@ -704,6 +710,8 @@ const Board = (r, c) => {
 
     isBoardFull();
 }
+
+
 
 
 
